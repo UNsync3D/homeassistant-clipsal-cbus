@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Clipsal C-Bus Connection",
+        "description": "Enter the IP address and port of your 5500SHAC unit.",
+        "data": {
+          "host": "IP Address",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect - check IP address and that the SHAC is online.",
+      "invalid_response": "Connected but received an unexpected response.",
+      "unknown": "Unexpected error - check logs."
+    },
+    "abort": {
+      "already_configured": "This C-Bus unit is already configured."
+    }
+  }
+}
