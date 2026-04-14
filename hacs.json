@@ -1,4 +1,6 @@
 {
   "name": "Clipsal C-Bus (5500SHAC)",
-  "render_readme": true
+  "render_readme": true,
+  "content_in_root": false,
+  "filename": "homeassistant_clipsal_cbus"
 }
