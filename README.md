@@ -134,6 +134,18 @@ The easiest way to find the correct group numbers for your installation is:
 
 For example, `"dst":"0\/56\/1"` means App 56 (Lighting), Group 1.
 
+Alternatively 
+
+Navigate to the following page http://<Your_5500SHAC_IP>/scada-vis/touch, run this in the browser console to list all objects: 
+
+```javascript
+var objs = objectStore.getObjects();
+Object.keys(objs).forEach(function(id) {
+  var obj = objs[id];
+  console.log(obj.name, obj.address);
+});
+```
+
 ## How It Works
 
 The 5500SHAC exposes a WebSocket endpoint at `ws://<ip>:8087/scada-vis/objects/ws`. This integration maintains a persistent connection, receiving real-time `groupwrite` events and translating them to HA entity state updates. Commands from HA are sent as JSON write commands over the same connection.
