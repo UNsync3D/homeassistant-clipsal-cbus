@@ -2,7 +2,7 @@
   "domain": "homeassistant_clipsal_cbus",
   "name": "Clipsal C-Bus (5500SHAC)",
   "version": "1.0.0",
-  "documentation": "https://github.com/UNsync3D/homeassistant_clipsal_cbus",
+  "documentation": "https://github.com/UNsync3D/homeassistant-clipsal-cbus",
   "requirements": [],
   "dependencies": [],
   "codeowners": ["@UNsync3D"],
